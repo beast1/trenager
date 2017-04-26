@@ -1,0 +1,17 @@
+.feedback {
+  @include wrapper;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  &__title {
+    @include font-h2($color-second);
+    
+    margin-bottom: 17px;
+  }
+  
+  &__promo {
+    @include font($color-second, 16px);
+  }
+}

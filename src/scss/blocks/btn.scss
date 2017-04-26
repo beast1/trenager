@@ -1,0 +1,22 @@
+.btn {
+  @include un-target;
+  @include font($color-second, 16px);
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 37px;
+  padding: 0 51px 0 47px;
+  
+  margin-left: 12px;
+  
+  font-weight: 700;
+  text-transform: uppercase;
+  
+  background-color: $color-action-main;
+  transform: skewX(-20deg);
+  
+  &__text {
+    transform: skewX(20deg);
+  }
+}

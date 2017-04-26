@@ -1,0 +1,47 @@
+.banner {
+  padding-top: 206px;
+  border-bottom: 6px solid $color-action-main;
+  //temporary
+  min-height: 700px;
+  background-color: #333;
+  
+  &__wrapper {
+    @include wrapper;
+  }
+  
+  &__title {
+    @include font-h1($color-main);
+    
+    display: flex;
+    margin-bottom: 8px;
+  }
+  
+  &__side-bar {
+    display: flex;
+    flex-direction: column;
+    padding: 14px 0 36px;
+    
+    background-color: $color-second;
+  }
+  
+  &__sub-title {
+    @include font-h2($color-action-main);
+    
+    display: flex;
+    margin: 0 0 36px;
+  }
+  
+  &__features {
+    @include un-list;
+    
+    margin-left: 23px;
+    margin-bottom: 30px;
+  }
+  
+  &__features-item {
+    @include font($color-main, 16px);
+    @include margin-bottom(15px);
+    
+    font-weight: 600;
+  }
+}

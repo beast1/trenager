@@ -1,0 +1,59 @@
+.location {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  &__title {
+    @include font-h2($color-second);
+  }
+  
+  &__promo {
+    @include font($color-second, 18px);
+  }
+  
+  &__map {
+    
+    //temporary
+    background-color: #333;
+  }
+  
+  &__adress {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 470px;
+    padding: 35px 28px 30px;
+    
+    background-color: $color-main;
+    box-shadow: 0 0 35px rgba(0, 1, 5, 0.4);
+  }
+  
+  &__sub-title {
+    @include font($color-action-main, 14px);
+    
+    display: flex;
+    margin-bottom: 15px;
+    
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  
+  &__adress-fieldset {
+    display: flex;
+    width: 100%;
+  }
+  
+  &__adress-item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+    &--1-of-2 {
+      width: 50%;
+    }
+  }
+  
+  &__adress-textfield {
+    margin: 0;
+  }
+}

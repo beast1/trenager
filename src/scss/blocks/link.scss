@@ -1,0 +1,6 @@
+.link {
+  @include un-target;
+  @include font($color-action-second, inherit);
+  
+  margin-left: 5px;
+}
