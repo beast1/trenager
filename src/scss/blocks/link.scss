@@ -2,5 +2,10 @@
   @include un-target;
   @include font($color-action-second, inherit);
   
-  margin-left: 5px;
+  text-decoration: underline;
+}
+
+p .link,
+span .link {
+  margin: 0 5px;
 }

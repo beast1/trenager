@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 60px;
   
   &__title {
     @include font-h2($color-second);
@@ -9,15 +10,26 @@
   
   &__promo {
     @include font($color-second, 18px);
+    
+    margin: 10px 0 20px;
   }
   
   &__map {
+    position: relative;
+    
+    width: 100%;
+    
+    background-image: url("../img/map.jpg");
+    background-position: center center;
     
     //temporary
+    min-height: 513px;
     background-color: #333;
   }
   
   &__adress {
+    position: absolute;
+    
     display: flex;
     flex-direction: column;
     align-items: center;

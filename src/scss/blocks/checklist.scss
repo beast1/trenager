@@ -1,0 +1,32 @@
+.checklist {
+  &--advice {
+    margin-bottom: 46px;
+  }
+  
+  &__title {
+    @include font($color-action-main, 14px);
+    
+    display: flex;
+        
+    font-weight: 700;
+    text-transform: uppercase;
+    
+    &--advice {
+      margin-bottom: 19px;
+    }
+  }
+  
+  &__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 11px;
+  }
+  
+  &__label {
+    @include font($color-second, 15px);
+    
+    margin-left: 10px;
+    
+    font-weight: 300;
+  }
+}
