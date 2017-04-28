@@ -7,11 +7,15 @@
     @include font-h2($color-second);
     
     margin-bottom: 20px;
+    
+    text-align: center;
   }
   
   &__promo {
     @include font($color-second, 18px);
     
     margin-bottom: 20px;
+    
+    text-align: center;
   }
 }

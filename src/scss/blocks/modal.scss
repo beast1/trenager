@@ -1,14 +1,14 @@
 .modal {
-//  position: fixed;
-//  top: 0;
-//  right: 0;
-//  bottom: 0;
-//  left: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   
-  background-color: fade-out($black, 0.85);
+  background-color: fade-out($black, 0.25);
   
   &__container {
-//    position: absolute;
+    position: absolute;
     position: relative;
     top: 50%;
     left: 50%;
@@ -23,22 +23,22 @@
     &--advice {
       width: 650px;
       min-height: 480px;
-//      margin-left: -325px;
-//      margin-top: -240px;
+      margin-left: -325px;
+      margin-top: -240px;
     }
 
     &--offer {
       width: 650px;
       min-height: 480px;
-//      margin-left: -380px;
-//      margin-top: -240px;
+      margin-left: -380px;
+      margin-top: -240px;
     }
 
     &--alert {
       width: 390px;
       min-height: 270px;
-//      margin-left: -190px;
-//      margin-top: -135px;
+      margin-left: -190px;
+      margin-top: -135px;
     }
   }
   

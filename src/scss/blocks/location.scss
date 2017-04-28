@@ -29,12 +29,15 @@
   
   &__adress {
     position: absolute;
+    top: 50%;
+    left: 55%;
     
     display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 470px;
     padding: 35px 28px 30px;
+    margin-top: -190px;
     
     background-color: $color-main;
     box-shadow: 0 0 35px rgba(0, 1, 5, 0.4);
@@ -56,6 +59,8 @@
   }
   
   &__adress-item {
+    @include margin-bottom(30px);
+    
     display: flex;
     flex-direction: column;
     width: 100%;

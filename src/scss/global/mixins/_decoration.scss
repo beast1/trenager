@@ -1,7 +1,24 @@
 @mixin wrapper {
-  width: 1170px;
+//  display: flex;
+//  flex-grow: 1;
+  max-width: 1170px;
   padding: 0 15px;
   margin: 0 auto;
+  
+  //temporary
+//  background-color: red;
+  
+  @media (max-width: $screen-lg) {
+    padding: inherit 130px;
+  }
+  
+  @media (max-width: $screen-mp) {
+    padding: inherit 20px;
+  }
+  
+  @media (max-width: $screen-xs) {
+    padding: inherit 0;
+  }  
 }
 
 @mixin margin-right($margin-right) {

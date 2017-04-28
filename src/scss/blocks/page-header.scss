@@ -8,12 +8,20 @@
     justify-content: space-between;
     align-items: center;
     height: 80px;
+    
+    @media (max-width: $screen-lg) {
+      justify-content: flex-start;
+    }
   }
   
   &__nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
+    @media (max-width: $screen-lg) {
+      display: none;
+    }
   }
   
   &__nav-item {
@@ -38,6 +46,12 @@
     }
   }
   
+  &__user-block {
+    @media (max-width: $screen-lg) {
+      margin-left: auto;
+    }
+  }
+  
   &__phone {
     @include font($color-main, 14px);
     
@@ -53,5 +67,24 @@
     font-weight: 700;
     text-transform: uppercase;
     text-decoration: underline;
+  }
+  
+  &__menu-btn {
+    @media (min-width: $screen-lg) {
+      display: none;
+    }
+    
+    @media (max-width: $screen-lg) {
+      @include un-target;
+      
+      display: flex;
+      width: 42px;
+      height: 16px;
+      margin-left: 100px;
+      
+      font-size: 0;
+      
+      background-image: url("../img/icon__burger.png");
+    }
   }
 }

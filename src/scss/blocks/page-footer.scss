@@ -1,0 +1,18 @@
+.page-footer {
+  
+  &__wrapper {
+    @include wrapper;
+  }
+  
+  display: flex;
+  align-items: center;
+  min-height: 71px;
+  border-top: 1px solid $gray-dark;
+  margin-top: 87px;
+  
+  &__copyright {
+    @include font($color-second, 14px);
+    
+    font-weight: 300;
+  }
+}

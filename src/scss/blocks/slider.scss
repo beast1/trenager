@@ -1,4 +1,30 @@
 .slider {
+  position: relative;
+  
+  &__control {
+    position: absolute;
+    
+    width: 35px;
+    height: 22px;
+    
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+    &--left {
+      top: 49px;
+      left: 218px;
+      
+      background-image: url("../img/icon-arrow-left.png");
+    }
+    
+    &--right {
+      top: 50px;
+      right: 220px;
+      
+      background-image: url("../img/icon-arrow-right.png");
+    }
+  }
+  
   &__pagination {
     @include un-list;
     

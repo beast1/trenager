@@ -2,6 +2,8 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>trenager.com</title>
   <link href="css/main.css" rel="stylesheet">
 </head>
 <body>
@@ -22,6 +24,7 @@
         <span class="page-header__phone">(812) 531-58-55</span>
         <a class="page-header__target" href="#">Заказать звонок</a>
       </div>
+      <button class="page-header__menu-btn">Меню</button>
     </div>
   </header>
   <div class="banner">
@@ -77,6 +80,7 @@
           <button class="btn  btn--second  btn--slim"><span class="btn__text">Подробнее</span></button>
         </div>
       </div>
+      
       <div class="card">
         <div class="card__preview">
           <img class="card__preview-img" src="img/product-1.png" alt="Предпросмотр товара">
@@ -91,6 +95,7 @@
           <button class="btn  btn--second  btn--slim"><span class="btn__text">Подробнее</span></button>
         </div>
       </div>
+      
       <div class="card">
         <div class="card__preview">
           <img class="card__preview-img" src="img/product-1.png" alt="Предпросмотр товара">
@@ -114,8 +119,33 @@
   </div>
   <div class="reasons">
     <div class="reasons__wrapper">
-      <span class="reasons__title"></span>
-      <div class="reasons__container"></div>
+      <span class="reasons__title">5 причин заказать тренажер у нас</span>
+      <div class="reasons__container">
+        <div class="reasons__item">
+          <div class="reasons__core">
+            <span class="reasons__short">Большой<br> выбор</span>
+          </div>
+        </div>
+        <div class="reasons__item">
+          <div class="reasons__core">
+            <span class="reasons__short">Товар<br> с гарантией</span>
+          </div>
+        </div>
+        <div class="reasons__item  reasons__item--both-deco">
+          <div class="reasons__core">
+            <span class="reasons__short">Быстрая<br> доставка</span>
+          </div>
+        </div>
+        <div class="reasons__main-item">
+          <span class="reasons__promo">Качественные<br> товары</span>
+          <span class="reasons__descr">Мы закупаем лучшие тренажеры напрямую у поставщиков.</span>
+        </div>
+        <div class="reasons__item  reasons__item--both-deco">
+          <div class="reasons__core">
+            <span class="reasons__short">Низкие<br> цены</span>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <div class="products">
@@ -291,9 +321,9 @@
         </div>
         <div class="location__adress-item">
           <span class="location__sub-title">Наши сайты:</span>
-          <a class="link  link--url  location__adress-item" href="#">trenager.com</a>
-          <a class="link  link--url  location__adress-item" href="#">trenager.ucoz.com</a>
-          <a class="link  link--vk  location__adress-item" href="#">vk.com/centr_trenagerov</a>
+          <a class="link  link--url" href="#">trenager.com</a>
+          <a class="link  link--url" href="#">trenager.ucoz.com</a>
+          <a class="link  link--vk" href="#">vk.com/centr_trenagerov</a>
         </div>
       </div>
     </div>
@@ -304,9 +334,11 @@
     <button class="btn"><span class="btn__text">Оставить заявку</span></button>
   </div>
   <footer class="page-footer">
-    <span class="page-footer__copyright">Copyright © 2017 Trenager.com. Все права защищены.</span>
+    <div class="page-footer__wrapper">
+      <span class="page-footer__copyright">Copyright © 2017 Trenager.com. Все права защищены.</span>
+    </div>
   </footer>
-  <div class="modal  modal--advice">
+  <div class="dev-hidden  modal  modal--advice">
     <div class="modal__container  modal__container--advice  advice">
       <button class="modal__exit">Закрыть</button>
       <span class="advice__title">Вы хотите получить бесплатную консультацию тренера по подбору самого эффективного тренажера для Вас?</span>
@@ -363,7 +395,7 @@
       </form>
     </div>
   </div>
-  <div class="modal  modal--offer">
+  <div class="dev-hidden  modal  modal--offer">
     <div class="modal__container  modal__container--offer  offer">
       <button class="modal__exit">Закрыть</button>
       <span class="offer__title">Вы выбрали: Велоэргометр Matrix U7XE VA 2017</span>
@@ -397,7 +429,7 @@
       </div>
     </div>
   </div>      
-  <div class="modal  modal--alert">
+  <div class="dev-hidden  modal  modal--alert">
     <div class="modal__container  modal__container--alert  alert">
       <button class="modal__exit">Закрыть</button>
       <span class="alert__title-descr">Ваша заявка</span>
@@ -408,7 +440,7 @@
       <button class="btn"><span class="btn__text">Закрыть</span></button>
     </div>
   </div>
-  <div class="modal  modal--alert">
+  <div class="dev-hidden  modal  modal--alert">
     <div class="modal__container  modal__container--alert  alert">
       <button class="modal__exit">Закрыть</button>
       <span class="alert__title-descr">Произошла</span>
