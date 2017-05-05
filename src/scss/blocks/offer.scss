@@ -1,5 +1,5 @@
 .offer {
-  padding: 56px 50px 100px;
+  padding: 56px 50px 0px;
   
   &__container {
     display: flex;
@@ -19,7 +19,6 @@
   }
   
   &__form {
-//    width: 42%;
     width: 270px;
   }
 }

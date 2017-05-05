@@ -1,5 +1,5 @@
 .slider {
-  position: relative;
+//  position: relative;
   
   &__control {
     position: absolute;
@@ -12,14 +12,14 @@
     
     &--left {
       top: 49px;
-      left: 218px;
+      left: -60px;
       
       background-image: url("../img/icon-arrow-left.png");
     }
     
     &--right {
       top: 50px;
-      right: 220px;
+      right: -60px;
       
       background-image: url("../img/icon-arrow-right.png");
     }

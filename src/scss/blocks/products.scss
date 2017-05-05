@@ -3,7 +3,12 @@
   
   display: flex;
   flex-direction: column;
-  padding: 50px 0;
+  padding-top: 50px;
+  margin-bottom: 65px;
+  
+  @media (max-width: $screen-sm) {
+    margin-bottom: 25px;
+  }
   
   &__title {
     @include font-h2($color-second);
@@ -13,6 +18,10 @@
     @media (max-width: $screen-lg) {
       margin-top: 65px;
     }
+    
+    @media (max-width: $screen-sm) {
+      margin-top: 45px;
+    }  
   }
   
   &__controls {
@@ -28,11 +37,30 @@
       flex-direction: column;
       justify-content: flex-start;
     }
+    
+    @media (max-width: $screen-sm) {
+      margin-left: 15px;
+    }
   }
   
   &__controls-item {
+//    display: flex;
+//    flex-direction: column;
+    
     @media (min-width: $screen-lg) {
       @include margin-right(80px);
+    }
+    
+    @media (max-width: $screen-mp) {
+      @include margin-bottom(30px);
+    }
+  }
+  
+  &__control-label {
+    @media (max-width: $screen-sm) {
+      display: flex;
+      
+      margin-bottom: 10px;
     }
   }
   
@@ -40,10 +68,12 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 50px 0 5px;
+    margin: 50px 0 10px;
     
     &--first {
-      margin-bottom: 45px;
+      @media (max-width: $screen-mp) {
+        margin-bottom: 0;
+      }
     }
     
     @media (max-width: $screen-sm) {

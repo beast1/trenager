@@ -13,6 +13,11 @@
   
   &__promo {
     @include font($color-second, 18px);
+    
+    margin: -9px 0;
+    
+    line-height: 37px;
+    text-align: center;
   }
   
   &__slider {
@@ -26,6 +31,8 @@
   }
   
   &__avatar {
+    position: relative;
+    
     display: flex;
     align-items: center;
     justify-content: center;

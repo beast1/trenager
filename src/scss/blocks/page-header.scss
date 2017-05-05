@@ -7,11 +7,22 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80px;
+    min-height: 80px;
     
     @media (max-width: $screen-lg) {
       justify-content: flex-start;
     }
+    
+    @media (max-width: $screen-mp) {
+      position: relative;
+      
+      justify-content: space-between;
+      padding: 60px 20px 30px;
+    }
+    
+    @media (max-width: $screen-sm) {
+      padding: 30px 20px 64px;
+    }    
   }
   
   &__nav {
@@ -50,6 +61,19 @@
     @media (max-width: $screen-lg) {
       margin-left: auto;
     }
+    
+    @media (max-width: $screen-mp) {
+      position: absolute;
+      left: 0;
+      right: 0;
+      
+      display: flex;
+      justify-content: center;
+    }
+    
+    @media (max-width: $screen-sm) {
+      bottom: 27px;
+    }
   }
   
   &__phone {
@@ -86,5 +110,13 @@
       
       background-image: url("../img/icon__burger.png");
     }
+    
+    @media (max-width: $screen-mp) {
+      margin-left: 0;
+    }
+    
+    @media (max-width: $screen-sm) {
+      margin-left: auto;
+    } 
   }
 }

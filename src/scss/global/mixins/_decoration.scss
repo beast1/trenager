@@ -9,15 +9,15 @@
 //  background-color: red;
   
   @media (max-width: $screen-lg) {
-    padding: inherit 130px;
+    padding: 0 130px;
   }
   
   @media (max-width: $screen-mp) {
-    padding: inherit 20px;
+    padding: 0 20px;
   }
   
   @media (max-width: $screen-xs) {
-    padding: inherit 0;
+    padding: 0 0;
   }  
 }
 
@@ -58,4 +58,48 @@
   cursor: pointer;
   background-color: transparent;
   background: $background;
+}
+
+@mixin media-ball {
+    &::before {
+    content: "";
+
+    position: fixed;
+    top: 10px;
+    right: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border: 3px solid darkgreen;
+
+    color: #fff;
+
+    border-radius: 50%;
+    background-color: green;
+
+    transition: 0.2s ease;
+
+    @media (min-width: $screen-lg) {
+      content: "mlg";
+    }
+
+    @media (max-width: $screen-lg) {
+      content: "lg";
+    }
+
+    @media (max-width: $screen-mp) {
+      content: "mp";
+    }
+
+    @media (max-width: $screen-sm) {
+      content: "sm";
+    }
+
+    @media (max-width: $screen-xs) {
+      content: "xs";
+    }
+  }
 }

@@ -5,6 +5,14 @@
   width: 100%;
   margin-bottom: 110px;
   
+  @media (max-width: $screen-lg) {
+    margin-bottom: 85px;
+  }
+  
+  @media (max-width: $screen-mp) {
+    margin-bottom: 65px;
+  }
+  
   &__title {
     @include font-h2($color-second);
     
