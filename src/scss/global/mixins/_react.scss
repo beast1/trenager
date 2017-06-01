@@ -1,3 +1,8 @@
+@mixin react--trs-default {
+  transition-duration: map-get($trs-default, duration);
+  transition-timing-function: map-get($trs-default, rhytm);
+}
+
 @mixin react--transition($transition) {
   transition: $transition;
 }

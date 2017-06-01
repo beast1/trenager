@@ -9,7 +9,8 @@ var gulp         = require('gulp'),
     imagemin     = require('gulp-imagemin'),
     pngquant     = require('imagemin-pngquant'),
     cache        = require('gulp-cache'),
-    autoprefixer = require('gulp-autoprefixer');
+    autoprefixer = require('gulp-autoprefixer'),
+    babel        = require('gulp-babel');
 
 gulp.task('sass', function() {
   return gulp.src('src/scss/main.scss')
@@ -20,12 +21,13 @@ gulp.task('sass', function() {
 });
 
 gulp.task('scripts', function() {
-  return gulp.src([
-    'src/libs/jquery/dist/jquery.min.js',
-  ])
-    .pipe(concat('libs.min.js'))
-    .pipe(uglify())
-    .pipe(gulp.dest('src/js'));
+  return gulp.src('src/babel/script.js')
+        .pipe(babel({
+            presets: ['es2015']
+        }))
+    // .pipe(uglify())
+    .pipe(gulp.dest('src/js'))
+    .pipe(browserSync.reload({stream: true}))
 });
 
 gulp.task('browser-sync', function() {
@@ -56,10 +58,11 @@ gulp.task('img', function() {
   .pipe(gulp.dest('dist/img'));
 });
 
-gulp.task('watch', ['browser-sync', 'scripts'], function() {
+gulp.task('watch', ['browser-sync', 'sass', 'scripts'], function() {
   gulp.watch('src/scss/**/*.scss', ['sass'], browserSync.reload);
   gulp.watch('src/*.html', browserSync.reload);
-  gulp.watch('src/js/**/*.js', browserSync.reload);
+  gulp.watch('src/babel/**/*.js', ['scripts'], browserSync.reload);
+  // gulp.watch('src/js/**/*.js', browserSync.reload);
 });
 
 gulp.task('build', ['clean', 'img', 'sass', 'scripts'], function() {

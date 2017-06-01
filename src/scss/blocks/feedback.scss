@@ -23,6 +23,32 @@
   &__slider {
     margin: 30px  0 60px;
   }
+
+  &__slider-control {
+    &--left {
+      top: 49px;
+      left: 32%;
+    }
+
+    &--right {
+      top: 50px;
+      right: 32%;
+    }
+  }
+
+  &__items {
+    $screen-sm--less-1: 450px;
+    max-width: 736px;
+    // height: 316px;
+
+    @media (max-width: $screen-sm) {
+      max-width: 436px;
+    }
+
+    @media (max-width: $screen-sm--less-1) {
+      max-width: 310px;
+    }
+  }
   
   &__item {
     display: flex;
@@ -31,7 +57,7 @@
   }
   
   &__avatar {
-    position: relative;
+    // position: relative;
     
     display: flex;
     align-items: center;
