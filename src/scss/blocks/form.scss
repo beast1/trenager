@@ -28,16 +28,6 @@
   
   &__label {
     display: none;
-    
-    &--select {
-      display: inline;
-      
-      @include font($gray, 12px);
-      
-      margin-right: 14px;
-      
-      text-transform: uppercase;
-    }
   }
   
   &__input {
@@ -50,13 +40,5 @@
     
     color: $gray-darken;
     font-weight: 300;
-  }
-  
-  &__select {
-    @include font($gray, 12px);
-    
-    text-transform: uppercase;
-    
-//    height: 21px;
   }
 }

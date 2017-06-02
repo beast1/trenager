@@ -1,7 +1,7 @@
 .card {
   position: relative;
   
-  display: flex;
+  display: none;
   flex-direction: column;
   max-width: 358px;
   padding: 0 38px 48px 38px;
@@ -10,8 +10,13 @@
   
   box-shadow: 0 0 40px rgba(0, 1, 5, 0.1);  
   
+  &--visible {
+    display: flex;
+  }
+
   &--offer {
 //    width: 35%;
+    display: flex;
     width: 226px;
     padding: 0;
     

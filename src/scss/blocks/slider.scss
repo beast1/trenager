@@ -36,6 +36,7 @@
     border: 2px solid $color-action-main;
     
     border-radius: 50%;
+    cursor: pointer;  
     
     &--current {
       background-color: $color-action-main;

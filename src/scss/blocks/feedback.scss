@@ -38,15 +38,15 @@
 
   &__items {
     $screen-sm--less-1: 450px;
-    max-width: 736px;
+    width: 736px;
     // height: 316px;
 
     @media (max-width: $screen-sm) {
-      max-width: 436px;
+      width: 436px;
     }
 
     @media (max-width: $screen-sm--less-1) {
-      max-width: 310px;
+      width: 310px;
     }
   }
   
