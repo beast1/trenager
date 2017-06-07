@@ -1,0 +1,16 @@
+.anchor {
+	position: relative;
+
+	&__point {
+		position: absolute;
+		top: 0;
+
+		&--location {
+			top: -15px;
+		}
+
+		&--feedback {
+			top: -5px;
+		}
+	}
+}

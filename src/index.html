@@ -6,6 +6,7 @@
   <title>trenager.com</title>
   <script src="js/handlebars.js" type="text/javascript"></script>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&amp;subset=cyrillic" rel="stylesheet">
+  <!-- <link href="css/magnific-popup.css" rel="stylesheet"> -->
   <link href="css/main.css" rel="stylesheet">
 </head>
 <body>
@@ -15,16 +16,16 @@
         <img src="img/logo.png" alt="TRENAGER.com" width="135">
       </div>
       <p class="page-header__nav">
-        <a class="page-header__nav-item  page-header__nav-item--target" href="#">Подбор тренажера</a>
-        <a class="page-header__nav-item"  href="#">Почему мы</a>
-        <a class="page-header__nav-item"  href="#">Бестселлеры</a>
-        <a class="page-header__nav-item"  href="#">Отзывы</a>
-        <a class="page-header__nav-item"  href="#">О нас</a>
-        <a class="page-header__nav-item"  href="#">Контакты</a>
+        <a class="page-header__nav-item  page-header__nav-item--target" href="#products">Подбор тренажера</a>
+        <a class="page-header__nav-item"  href="#reasons">Почему мы</a>
+        <a class="page-header__nav-item"  href="#bestsellers">Бестселлеры</a>
+        <a class="page-header__nav-item"  href="#feedback">Отзывы</a>
+        <a class="page-header__nav-item"  href="#reasons">О нас</a>
+        <a class="page-header__nav-item"  href="#location">Контакты</a>
       </p>
       <div class="page-header__user-block">
         <span class="page-header__phone">(812) 531-58-55</span>
-        <a class="js-open-advice  page-header__target" href="#">Заказать звонок</a>
+        <a class="mfp-open-advice  js-open-advice  page-header__target" href="#advice">Заказать звонок</a>
       </div>
       <button class="page-header__menu-btn">Меню</button>
     </div>
@@ -40,51 +41,39 @@
             <li class="banner__features-item">19 лет на российском рынке</li>
             <li class="banner__features-item">Кардиотренажеры от 3290 рублей</li>
           </ul>
-          <button class="js-open-advice  btn  banner__btn"><span class="btn__text">Оставить заявку</span></button>
+          <button class="mfp-open-advice  js-open-advice  btn  banner__btn"><span class="btn__text">Оставить заявку</span></button>
         </div>
       </div>
     </div>
   </div>
-  <div class="products">
+  <div class="products  anchor">
+    <div class="anchor__point" id="products"></div>
     <span class="products__title">Подберите эффективный кардиотренажер</span>
     <form class="products__controls  form">
       <div class="select-group  products__controls-item">
-        <!-- <select class="form__select" id="products-controls__type" name="products-controls__type">
-          <option value="products-controls__treadmills">Беговые дорожки</option>
-          <option value="products-controls__exercise-bikes" selected>Велотренажёры</option>
-          <option value="products-controls__elliptical">Эллиптические тренажёры</option>
-          <option value="products-controls__steppers">Степперы</option>
-          <option value="products-controls__rowing-machines">Гребные тренажёры</option>
-        </select> -->
         <span class="select-group__label  products__control-label">Выберите вид тренажера</span>
-        <div class="js-sort-type  select" tabindex="1">
-          <input class="selectopt" type="radio" id="opt1" checked>
-          <label for="opt1" class="js-option  option" data-type="1">Беговые дорожки</label>
-          
-          <input class="selectopt" type="radio" id="opt2">
-          <label for="opt2" class="js-option  option" data-type="2">Велотренажёры</label>
-          
-          <input class="selectopt" type="radio" id="opt3">
-          <label for="opt3" class="js-option  option" data-type="3">Эллиптические тренажёры</label>
-
-          <input class="selectopt" type="radio" id="opt4">
-          <label for="opt4" class="js-option  option" data-type="4">Степперы</label>
-
-          <input class="selectopt" type="radio" id="opt5">
-          <label for="opt5" class="js-option  option" data-type="5">Гребные тренажёры</label>
+        <div class="js-sort-type-wrap  options">
+          <div class="options__current">
+            <input class="js-option  options__current-variant" type="text" value="Беговые дорожки" data-type="1" readonly>
+          </div>
+          <div class="js-sort-type  options__variants">
+            <input class="js-option  options__variant" type="text" value="Велотренажёры" data-type="2" readonly>
+            <input class="js-option  options__variant" type="text" value="Эллиптические тренажёры" data-type="3" readonly>
+            <input class="js-option  options__variant" type="text" value="Степперы" data-type="4" readonly>
+            <input class="js-option  options__variant" type="text" value="Гребные тренажёры" data-type="5" readonly>
+          </div>
         </div>
       </div>
-      <div class="select-group  products__controls-item">
+      <div class="js-sort-price-wrap  select-group  products__controls-item">
         <span class="select-group__label  products__control-label">Выберите цену тренажера</span>
-        <div class="js-sort-price  select" tabindex="1">
-          <input class="selectopt" type="radio" id="opt6" checked>
-          <label for="opt6" class="js-option  option" data-price-group="less">Бюджетные модели</label>
-          
-          <input class="selectopt" type="radio" id="opt7">
-          <label for="opt7" class="js-option  option" data-price-group="midle">Модели со средней ценой</label>
-          
-          <input class="selectopt" type="radio" id="opt8">
-          <label for="opt8" class="js-option  option" data-price-group="large">Профессиональные модели</label>
+        <div class="options">
+          <div class="options__current">
+            <input class="js-option  options__current-variant" type="text" value="Бюджетные модели" data-price-group="less" readonly>
+          </div>
+          <div class="js-sort-price  options__variants">
+            <input class="js-option  options__variant" type="text" value="Модели со средней ценой" data-price-group="midle" readonly>
+            <input class="js-option  options__variant" type="text" value="Профессиональные модели" data-price-group="large" readonly>
+          </div>
         </div>
       </div>
     </form>
@@ -94,10 +83,11 @@
     <div class="question">
       <span class="question__title">Не нашли подходящий тренажер?</span>
       <div class="question__promo">Оставьте заявку на индивидуальный подбор необходимого тренажера!</div>
-      <button class="js-open-advice  btn"><span class="btn__text">Оставить заявку</span></button>
+      <button class="mfp-open-advice  js-open-advice  btn"><span class="btn__text">Оставить заявку</span></button>
     </div>
   </div>
-  <div class="reasons">
+  <div class="reasons  anchor">
+    <div class="anchor__point" id="reasons"></div>
     <div class="reasons__background-mask">
       <div class="reasons__wrapper">
         <span class="reasons__title">5 причин заказать тренажер у нас</span>
@@ -130,13 +120,15 @@
       </div>
     </div>
   </div>
-  <div class="products">
+  <div class="products  anchor">
+    <div class="anchor__point" id="bestsellers"></div>
     <span class="products__title">Бестселлеры среди кардиотренажеров в 2017 году</span>
     <div class="js-output-products  products__catalog  products__catalog--second" id="showcase-2">
       <!--Output products-->
     </div>
   </div>
-  <div class="feedback">
+  <div class="feedback  anchor">
+    <div class="anchor__point  anchor__point--feedback" id="feedback"></div>
     <span class="feedback__title">Отзывы наших клиентов</span>
     <span class="feedback__promo">Еще больше отзывов по адресу:<a class="link" href="#">trenager.com</a></span>
     <div class="siema  slider  slider--feedback  feedback__slider">
@@ -156,7 +148,8 @@
       <!--output gallery-->
     </div>
   </div>
-  <div class="location">
+  <div class="location  anchor">
+    <div class="anchor__point  anchor__point--location" id="location"></div>
     <span class="location__title">Мы готовы подобрать тренажер специально для вас</span>
     <span class="location__promo">Приезжайте к нам в офис!</span>
     <div class="location__map">
@@ -197,10 +190,11 @@
       </div>
     </div>
   </div>
+  <div class="box"></div>
   <div class="question">
     <span class="question__title">Остались вопросы?</span>
-    <div class="question__promo">Задайте их нашему менеджеру! Мы с радостью поможем подобрать тренажер!</div>
-    <button class="btn"><span class="js-open-advice  btn__text">Оставить заявку</span></button>
+    <div class="question__promo">Задайте их нашему менеджеру!123 Мы с радостью поможем подобрать тренажер!</div>
+    <button class="btn"><span class="mfp-open-advice  js-open-advice  btn__text">Оставить заявку</span></button>
   </div>
   <footer class="page-footer">
     <div class="page-footer__wrapper">
@@ -208,7 +202,7 @@
     </div>
   </footer>
   <div class="modal  modal--advice">
-    <div class="modal__container  modal__container--advice  advice">
+    <div id="advice" class="modal__container  modal__container--advice  advice">
       <button class="modal__exit">Закрыть</button>
       <span class="advice__title">Вы хотите получить бесплатную консультацию тренера по подбору самого эффективного тренажера для Вас?</span>
       <form class="advice__form form" action="" method="post">
@@ -324,7 +318,7 @@
     {{#each products}}
       <div class="card" data-status="{{status}}" data-type="{{type}}" data-price-group="{{price-group}}">
         <div class="card__preview">
-          <img class="card__preview-img" src="img/{{image}}" alt="Предпросмоттовара">
+          <img class="card__preview-img" src="img/{{image}}" alt="Предпросмотр товара">
         </div>
         <span class="card__name">{{name}}</span>
         <span class="card__price">{{price}} руб</span>
@@ -332,8 +326,8 @@
           {{short-description}}
         </p>
         <div class="card__controls">
-          <button class="js-open-offer  btn  btn--light  btn--slim"><span class="btn__text">Заказать</span></button>
-          <button class="js-open-offer  btn  btn--second  btn--slim"><span class="btn__text">Подробнее</span></button>
+          <button class="mfp-open-offer  js-open-offer  btn  btn--light  btn--slim"><span class="btn__text">Заказать</span></button>
+          <button class="mfp-open-offer  js-open-offer  btn  btn--second  btn--slim"><span class="btn__text">Подробнее</span></button>
         </div>
       </div>
     {{/each}}
@@ -363,6 +357,8 @@
   </script>
   <script src="js/siema.min.js"></script>
   <script src="js/content.js" type="text/javascript"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+  <!-- <script src="js/jquery.magnific-popup.min.js" type="text/javascript"></script> -->
   <script src="js/script.js"></script>
 </body>
 </html>

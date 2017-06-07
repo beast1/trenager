@@ -88,6 +88,50 @@ function castom() {
   toggleModal(mdOfferBody, mdOfferOpen, mdOfferExit);
   /*EndModals*/
 
+  /*MfpModals*/
+  // $('.mfp-open-advice').magnificPopup();
+  // $('.mfp-open-advice').magnificPopup({
+  //     items: {
+  //       src: '.box'
+  //     },
+  //     type: 'inline'
+  // });
+
+  // $('.mfp-open-offer').magnificPopup({
+  //     items: {
+  //       src: '.modal__container--offer'
+  //     },
+  //     type: 'inline'
+  // });
+  /*EndMfpModals*/
+
+  /*Options*/
+  function addOptions(selector) {
+    // var options = document.querySelector(selector + " " + ".options");
+    var optionsCurrent = document.querySelector(selector + " " + ".options__current");
+    var optionsVariants = document.querySelector(selector + " " + ".options__variants");
+    var optionsVariant = document.querySelectorAll(selector + " " + ".options__variant");
+    var optionsCurrentVariant = document.querySelector(selector + " " + ".options__current-variant");
+    // var body  = document.querySelector("body");
+
+    optionsCurrent.addEventListener("click", function (e) {
+      e.preventDefault();
+      optionsVariants.classList.toggle("options__variants--visible");
+    });
+
+    // body.addEventListener("click", (e) => {
+    //   optionsVariants.classList.remove("options__variants--visible");
+    // });
+
+    // options.addEventListener("click", (e) => {
+    //   e.stopImmediatePropagation();
+    // });
+  }
+
+  addOptions(".js-sort-type-wrap");
+  addOptions(".js-sort-price-wrap");
+  /*EndOptions*/
+
   /*Feedback*/
   var feedbackSlider = new Siema({
     selector: '.feedback__items',

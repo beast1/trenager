@@ -1,0 +1,53 @@
+.options {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  width: 220px;
+  
+  &__current {
+    display: flex;
+    z-index: 1;
+  }
+  
+  &__variants {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    z-index: 2;
+
+    display: none;
+    flex-direction: column;
+    
+    transform: translate(0, 100%);
+
+    &--visible {
+      display: flex;
+    }
+  }
+  
+  &__current-variant {
+    width: 100%;
+  }
+
+  &__current-variant,
+  &__variant {
+    @include font($gray-darken, 12px);
+    height: 28px;
+    padding: 0 10px;
+
+    text-transform: uppercase;
+  }
+  
+  &__variant {
+    $border: 1px solid $gray;
+
+    display: flex;
+    border: none;
+      
+    border-bottom: $border;
+    border-left: $border;
+    border-right: $border;
+  }
+}

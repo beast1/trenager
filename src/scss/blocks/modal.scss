@@ -1,3 +1,11 @@
+.box {
+  width: 500px;
+  height: 700px;
+  background-color: #fff;
+  padding-top: 10px;
+  margin-top: 10px;
+}
+
 .modal {
   @include react--trs-default;
 
@@ -6,6 +14,7 @@
   right: 0;
   bottom: 0;
   left: 0;
+  z-index: 1;
 
   background-color: fade-out($black, 0.25);
 
@@ -21,7 +30,6 @@
 
   &__container {
     position: absolute;
-    position: relative;
     top: 50%;
     left: 50%;
 
@@ -32,18 +40,35 @@
       inset 0 0 0 10px $color-main,
       inset 0 0 0 11px $color-action-main;
 
+    @media (max-width: $screen-sm) {
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+
+      // margin-left: 0;
+      // margin-top: 0;
+
+      overflow: scroll;
+    }
+
     &--advice {
-      width: 650px;
+      max-width: 650px;
       min-height: 480px;
-      margin-left: -325px;
-      margin-top: -240px;
+
+      @media (min-width: $screen-sm) {
+        margin-left: -325px;
+        margin-top: -240px;
+      }
     }
 
     &--offer {
       width: 650px;
       min-height: 380px;
-      margin-left: -325px;
-      margin-top: -240px;
+      @media (min-width: $screen-sm) {
+        margin-left: -325px;
+        margin-top: -240px;
+      }
     }
 
     &--alert {

@@ -47,9 +47,9 @@ function  generateContent(file, template, output, mark) {
 
 var contentStatus = 0;
 
-generateContent("products.json", "template-product", ".js-output-products");
-generateContent("feedbacks.json", "template-feedback", ".js-output-feedbacks");
-generateContent("gallery.json", "template-gallery", ".js-output-photos");
+generateContent("json/products.json", "template-product", ".js-output-products");
+generateContent("json/feedbacks.json", "template-feedback", ".js-output-feedbacks");
+generateContent("json/gallery.json", "template-gallery", ".js-output-photos");
 /*EndGenerate content*/
 
 console.log("g end");

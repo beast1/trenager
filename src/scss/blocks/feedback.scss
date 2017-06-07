@@ -1,4 +1,6 @@
 .feedback {
+  $screen-sm--less-1: 450px;
+
   @include wrapper;
   
   display: flex;
@@ -26,18 +28,33 @@
 
   &__slider-control {
     &--left {
-      top: 49px;
+      top: 50px;
       left: 32%;
+
+      @media (max-width: $screen-sm) {
+        left: 27%;
+      }
+
+      @media (max-width: $screen-sm--less-1) {
+        left: 18%;
+      }
     }
 
     &--right {
       top: 50px;
       right: 32%;
+
+      @media (max-width: $screen-sm) {
+        right: 27%;
+      }
+
+      @media (max-width: $screen-sm--less-1) {
+        right: 18%;
+      }
     }
   }
 
   &__items {
-    $screen-sm--less-1: 450px;
     width: 736px;
     // height: 316px;
 
