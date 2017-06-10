@@ -1,10 +1,15 @@
 .btn {
   @include un-target;
   @include font($color-second, 16px);
-  
+
+  @include react--trs-default;
+  @include react--background(lighten($color-action-main, 4), $color-action-main);
+  @include react--color($color-second, $color-second);
+
   display: flex;
   align-items: center;
   justify-content: center;
+  max-width: 270px;
   height: 37px;
   padding: 0 51px 0 47px;
   
@@ -18,7 +23,7 @@
     margin: 0 auto;
   }
   
-  &--offer {
+  &--order {
     margin: 0 auto;
     margin-top: 50px;
   }
@@ -37,6 +42,10 @@
     
     &.btn--slim {
       font-weight: 400;
+    }
+
+    &:hover {
+      background-color: $color-action-main;
     }
   }
   

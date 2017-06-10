@@ -1,0 +1,88 @@
+.order {
+  padding: 56px 50px 30px;
+
+  max-width: 650px;
+  min-height: 380px;
+
+  @media (max-width: $screen-sm) {
+    max-width: 325px;
+  }
+  
+  &__container {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: $screen-sm) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+
+    @media (max-width: $screen-sm) {
+      max-width: 100%;
+    }
+  }
+
+  &__form {
+    max-width: 270px;
+  }
+
+  &__preview {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__preview-img {
+    // width: 119px;
+
+  }
+
+  &__price {
+    @include font($color-action-main, 18px);
+    
+    margin: 0 0 14px;
+    
+    font-weight: 700;
+  }
+
+  &__descr {
+    @include font($color-second, 14px);
+    
+    margin: 0;
+    margin-bottom: 19px;
+    
+    line-height: 18px;
+    font-weight: 300;
+  }
+  
+  &__title {
+    @include font-h2($color-second);
+    
+    display: flex;
+    justify-content: center;
+    margin-bottom: 34px;
+    
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+  }
+  
+  &__form-item {
+    margin-bottom: 24px;
+  }
+
+  &__btn {
+    margin-top: 40px;
+
+    @media (max-width: $screen-sm) {
+      height: 100%;
+      padding-top: 14px;
+      padding-bottom: 14px;
+    }
+  }
+}

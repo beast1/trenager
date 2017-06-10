@@ -25,6 +25,12 @@
     &--visible {
       display: flex;
     }
+
+    .options-variant {
+      &:hover {
+        box-shadow: 0 0 0 1px $color-action-main;
+      }
+    }
   }
   
   &__current-variant {
@@ -43,11 +49,17 @@
   &__variant {
     $border: 1px solid $gray;
 
+    @include react--trs-default;
+
     display: flex;
     border: none;
       
     border-bottom: $border;
     border-left: $border;
     border-right: $border;
+
+    &:hover {
+      color: $color-second;
+    }
   }
 }

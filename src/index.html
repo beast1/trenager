@@ -4,10 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>trenager.com</title>
-  <script src="js/handlebars.js" type="text/javascript"></script>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&amp;subset=cyrillic" rel="stylesheet">
-  <!-- <link href="css/magnific-popup.css" rel="stylesheet"> -->
-  <link href="css/main.css" rel="stylesheet">
+  <style>body,html{margin:0;overflow-x:hidden}html{-webkit-box-sizing:border-box;box-sizing:border-box}*{-webkit-box-sizing:inherit;box-sizing:inherit}.dev-hidden{display:none}.btn{border:none;color:inherit;text-decoration:none;outline:0;cursor:pointer;background-color:transparent;color:#000;font-family:"Open Sans",sans-serif;font-size:16px;line-height:16px;font-weight:400;-webkit-transition-duration:.2s;transition-duration:.2s;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;max-width:270px;height:37px;padding:0 51px 0 47px;font-weight:700;text-transform:uppercase;background-color:#c4d700;-webkit-transform:skewX(-20deg);-ms-transform:skewX(-20deg);transform:skewX(-20deg)}.btn:hover{background:#d7eb00}.btn:active{background:#c4d700}.btn:hover{color:#000}.btn:active{color:#000}.btn--advice{margin:0 auto}.btn--order{margin:0 auto;margin-top:50px}.btn__text{-webkit-transform:skewX(20deg);-ms-transform:skewX(20deg);transform:skewX(20deg)}.btn--light{color:#fff}.btn--second{background-color:#fff;-webkit-box-shadow:inset 0 0 0 3px #c4d700;box-shadow:inset 0 0 0 3px #c4d700}.btn--second.btn--slim{font-weight:400}.btn--second:hover{background-color:#c4d700}.btn--slim{height:30px;padding:0 22px;font-size:14px;line-height:18px;font-weight:700}.page-header{background-color:#000}.page-header__wrapper{max-width:1170px;padding:0 15px;margin:0 auto;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;min-height:80px}@media (max-width:1170px){.page-header__wrapper{padding:0 130px}}@media (max-width:992px){.page-header__wrapper{padding:0 20px}}@media (max-width:345px){.page-header__wrapper{padding:0 0}}@media (max-width:1170px){.page-header__wrapper{-webkit-box-pack:start;-webkit-justify-content:flex-start;-ms-flex-pack:start;justify-content:flex-start}}@media (max-width:992px){.page-header__wrapper{position:relative;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;padding:60px 20px 30px}}@media (max-width:764px){.page-header__wrapper{padding:30px 20px 64px}}.page-header__nav{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}@media (max-width:1170px){.page-header__nav{display:none}}.page-header__nav-item{border:none;color:inherit;text-decoration:none;outline:0;cursor:pointer;background-color:transparent;color:#fff;font-family:"Open Sans",sans-serif;font-size:12px;line-height:12px;font-weight:400;-webkit-transition-duration:.2s;transition-duration:.2s;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out;margin:0 16px;text-transform:uppercase;font-weight:700}.page-header__nav-item:hover{color:rgba(255,255,255,.85)}.page-header__nav-item:active{color:#c4d700}.page-header__nav-item--target{color:#c4d700}.page-header__nav-item--target:hover{color:#e9ff01}.page-header__nav-item--target:active{color:#c4d700}.page-header__nav-item:first-of-type{margin-left:0}.page-header__nav-item:last-of-type{margin-right:0}@media (max-width:1170px){.page-header__user-block{margin-left:auto}}@media (max-width:992px){.page-header__user-block{position:absolute;left:0;right:0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center}}@media (max-width:764px){.page-header__user-block{bottom:27px}}.page-header__phone{color:inherit;text-decoration:none;color:#fff;font-family:"Open Sans",sans-serif;font-size:14px;line-height:14px;font-weight:400;margin-right:15px;font-weight:700}.page-header__target{border:none;color:inherit;text-decoration:none;outline:0;cursor:pointer;background-color:transparent;color:#c4d700;font-family:"Open Sans",sans-serif;font-size:12px;line-height:12px;font-weight:400;-webkit-transition-duration:.2s;transition-duration:.2s;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out;font-weight:700;text-transform:uppercase;text-decoration:underline}.page-header__target:hover{color:#e9ff01}.page-header__target:active{color:#c4d700}@media (min-width:1170px){.page-header__menu-btn{display:none}}@media (max-width:1170px){.page-header__menu-btn{border:none;color:inherit;text-decoration:none;outline:0;cursor:pointer;background-color:transparent;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;width:42px;height:16px;margin-left:100px;font-size:0;background-image:url(../img/icon__burger.png)}}@media (max-width:992px){.page-header__menu-btn{margin-left:0}}@media (max-width:764px){.page-header__menu-btn{margin-left:auto}}.banner{background-image:url(../img/banner-1.jpg);background-color:#333;background-repeat:no-repeat;background-position:center -77px}.banner__put-background{height:708px;padding-top:206px;border-bottom:6px solid #c4d700;background-color:rgba(0,0,0,.35)}@media (max-width:1170px){.banner__put-background{padding-top:261px}}@media (max-width:399px){.banner__put-background{padding-top:315px}}@media (max-width:345px){.banner__put-background{background-position:-800px -77px}}.banner__wrapper{position:relative;margin-right:60px;-webkit-transform:skewX(20deg);-ms-transform:skewX(20deg);transform:skewX(20deg)}@media (max-width:764px){.banner__wrapper{margin-right:auto;margin-left:15px;-webkit-transform:skewX(0);-ms-transform:skewX(0);transform:skewX(0)}}.banner__title{color:#fff;font-family:"Open Sans",sans-serif;font-size:36px;line-height:38px;font-weight:700;text-transform:uppercase;position:absolute;top:-70px;left:-2px;right:-500px;line-height:55px}@media (max-width:1170px){.banner__title{top:-124px;right:-400px}}@media (max-width:764px){.banner__title{top:-178px;right:0}}@media (max-width:399px){.banner__title{top:-233px}}.banner__title-separator::before{content:"-";display:none}@media (max-width:399px){.banner__title-separator::before{display:inline}}.banner__sidebar{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:end;-webkit-align-items:flex-end;-ms-flex-align:end;align-items:flex-end;width:800px;padding:14px 0 36px;margin-left:-50px;background-color:rgba(0,0,0,.6);-webkit-transform:skewX(-20deg);-ms-transform:skewX(-20deg);transform:skewX(-20deg)}@media (max-width:1170px){.banner__sidebar{width:680px}}@media (max-width:992px){.banner__sidebar{width:575px}}@media (max-width:764px){.banner__sidebar{width:100%;padding-bottom:0;margin-left:0;margin-right:auto;-webkit-transform:skewX(0);-ms-transform:skewX(0);transform:skewX(0)}}.banner__sub-title{margin:-9px 0;color:#c4d700;font-family:"Open Sans",sans-serif;font-size:26px;line-height:37px;text-align:center;font-weight:600;text-transform:uppercase;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;margin:-9px 0 27px;line-height:43px}@media (max-width:764px){.banner__sub-title{text-align:left}}.banner__features{list-style:none;margin:0;padding:0;margin-left:23px;margin-bottom:30px}@media (max-width:764px){.banner__features{margin-left:0}}.banner__features-item{color:#fff;font-family:"Open Sans",sans-serif;font-size:16px;line-height:16px;font-weight:400;margin:-7.5px 0;line-height:31px;font-weight:600}.banner__features-item:not(:last-of-type){margin-bottom:15px}.banner__btn{margin-left:12px}@media (max-width:764px){.banner__btn{position:absolute;bottom:-58px}}</style>
 </head>
 <body>
   <header class="page-header">
@@ -24,8 +21,8 @@
         <a class="page-header__nav-item"  href="#location">Контакты</a>
       </p>
       <div class="page-header__user-block">
-        <span class="page-header__phone">(812) 531-58-55</span>
-        <a class="mfp-open-advice  js-open-advice  page-header__target" href="#advice">Заказать звонок</a>
+        <a class="page-header__phone" href="tel:8125315855">(812) 531-58-55</a>
+        <a class="js-open-advice  page-header__target" href="#advice-popup">Заказать звонок</a>
       </div>
       <button class="page-header__menu-btn">Меню</button>
     </div>
@@ -41,7 +38,7 @@
             <li class="banner__features-item">19 лет на российском рынке</li>
             <li class="banner__features-item">Кардиотренажеры от 3290 рублей</li>
           </ul>
-          <button class="mfp-open-advice  js-open-advice  btn  banner__btn"><span class="btn__text">Оставить заявку</span></button>
+          <a class="js-open-advice  btn  banner__btn" href="#advice-popup"><span class="btn__text">Оставить заявку</span></a>
         </div>
       </div>
     </div>
@@ -83,7 +80,7 @@
     <div class="question">
       <span class="question__title">Не нашли подходящий тренажер?</span>
       <div class="question__promo">Оставьте заявку на индивидуальный подбор необходимого тренажера!</div>
-      <button class="mfp-open-advice  js-open-advice  btn"><span class="btn__text">Оставить заявку</span></button>
+      <a class="js-open-advice  btn" href="#advice-popup"><span class="btn__text">Оставить заявку</span></a>
     </div>
   </div>
   <div class="reasons  anchor">
@@ -167,8 +164,8 @@
             <div class="location__adress-item location__adress-item--1-of-2">
               <span class="location__sub-title">Звоните:</span>
               <p class="location__adress-textfield">
-                +7 (812) 531-58-55<br>
-                +7 (911) 218-14-71
+                <a class="location__phone" href="tel:78125315855">+7 (812) 531-58-55</a><br>
+                <a class="location__phone" href="tel:79112181471">+7 (911) 218-14-71</a>
               </p>
             </div>
           </div>
@@ -190,108 +187,109 @@
       </div>
     </div>
   </div>
-  <div class="box"></div>
   <div class="question">
     <span class="question__title">Остались вопросы?</span>
-    <div class="question__promo">Задайте их нашему менеджеру!123 Мы с радостью поможем подобрать тренажер!</div>
-    <button class="btn"><span class="mfp-open-advice  js-open-advice  btn__text">Оставить заявку</span></button>
+    <div class="question__promo">Задайте их нашему менеджеру! Мы с радостью поможем подобрать тренажер!</div>
+    <a class="js-open-advice  btn" href="#advice-popup"><span class="btn__text">Оставить заявку</span></a>
   </div>
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <span class="page-footer__copyright">Copyright © 2017 Trenager.com.<span class="page-footer__copyright-inner">Все права защищены.</span></span>
     </div>
   </footer>
-  <div class="modal  modal--advice">
-    <div id="advice" class="modal__container  modal__container--advice  advice">
-      <button class="modal__exit">Закрыть</button>
+  <div class="advice  popup  mfp-hide" id="advice-popup">
       <span class="advice__title">Вы хотите получить бесплатную консультацию тренера по подбору самого эффективного тренажера для Вас?</span>
       <form class="advice__form form" action="" method="post">
-        <div class="form__row">
-          <div class="checklist  checklist--advice  form__item  form__item--1-of-2">
-            <span class="checklist__title  checklist__title--advice">Цель ваших тренеровок</span>
+        <div class="advice__form-row  form__row">
+          <div class="advice__checklist  checklist  form__item  form__item--1-of-2">
+            <span class="advice__checklist-title  checklist__title">Цель ваших тренеровок</span>
+
             <div class="checklist__item">
               <input class="checklist__input" type="checkbox" id="advice__goal--slimming" name="advice__goal--slimming">
               <label for="advice__goal--slimming" class="checklist__label">Похудение</label>
             </div>
+
             <div class="checklist__item">
               <input class="checklist__input" type="checkbox" id="advice__goal--muscle" name="advice__goal--muscle" checked>
               <label for="advice__goal--muscle" class="checklist__label">Укрепление мышечной массы</label>
             </div>
+
             <div class="checklist__item">
               <input class="checklist__input" type="checkbox" id="advice__goal--health" name="advice__goal--health">
               <label for="advice__goal--health" class="checklist__label">Общее улучшение здоровья</label>
             </div>
           </div>
-          <div class="checklist  checklist--advice  form__item  form__item--1-of-2">
-            <span class="checklist__title  checklist__title--advice">Желаемая регулярность занятий</span>
+          <div class="advice__checklist  checklist  form__item  form__item--1-of-2">
+            <span class="advice__checklist-title  checklist__title">Желаемая регулярность занятий</span>
+
             <div class="checklist__item">
               <input class="checklist__input" type="radio" id="advice__intensity--1-2" name="advice__intensity" value="advice__intensity--1-2">
               <label for="advice__intensity--1-2" class="checklist__label">1-2 раза в неделю</label>
             </div>
+
             <div class="checklist__item">
               <input class="checklist__input" type="radio" id="advice__intensity--3-4" name="advice__intensity" value="advice__intensity--3-4" checked>
               <label for="advice__intensity--3-4" class="checklist__label">3-4 раза в неделю</label>
             </div>
+
             <div class="checklist__item">
               <input class="checklist__input" type="radio" id="advice__intensity--more-then-5" name="advice__intensity" value="advice__intensity--more-then-5">
               <label for="advice__intensity--more-then-5" class="checklist__label">Более 5 раз в неделю</label>
             </div>
           </div>
         </div>
-        <div class="form__row">
-          <div class="form__item  form__item--1-of-2  form__item--advice">
-            <label class="form__label" for="advice__first-name">Ваше имя</label>
+        <div class="advice__form-row  form__row">
+          <div class="advice__form-item  form__item  form__item--1-of-2">
             <input class="form__input" id="advice__first-name" type="text" placeholder="Ваше имя">
+            <label class="form__label" for="advice__first-name">Ваше имя</label>
           </div>
 
-          <div class="form__item  form__item--1-of-2  form__item--advice">
+          <div class="advice__form-item  form__item  form__item--1-of-2">
             <label class="form__label" for="advice__phone" type="tel">Номер телефона</label>
             <input class="form__input" id="advice__phone" type="text" placeholder="Номер телефона">
           </div>
 
-          <div class="form__item  form__item--advice">
+          <div class="advice__form-item  form__item">
             <label class="form__label" for="advice__massage">Ваш коментарий</label>
             <input class="form__input" id="advice__massage" type="text" placeholder="Ваш коментарий">
           </div>        
         </div>
+
         <button class="btn  btn--advice"><span class="btn__text">Оставить заявку</span></button>
       </form>
     </div>
-  </div>
-  <div class="modal  modal--offer">
-    <div class="modal__container  modal__container--offer  offer">
-      <button class="modal__exit">Закрыть</button>
-      <span class="offer__title">Вы выбрали: Велоэргометр Matrix U7XE VA 2017</span>
-      <div class="offer__container">
-        <div class="card  card--offer">
-          <div class="card__preview  card__preview--offer">
-            <img class="card__preview-img  card__preview-img--offer" src="img/product-1.png" alt="Предпросмотр товара">
-          </div>
-          <span class="card__price">7 962 руб</span>
-          <p class="card__descr">
-            Велоэргометры серий U/R/H. Часть внутренней электроники и программный код существенно доработаны.
-          </p>
+  <div id="order-popup" class="order  popup  mfp-hide">
+    <span class="order__title">Вы выбрали: Велоэргометр Matrix U7XE VA 2017</span>
+    <div class="order__container">
+      <div class="order__card">
+        <div class="order__preview">
+          <img class="order__preview-img" src="img/product-1.png" alt="Предпросмотр товара">
         </div>
-        <form class="offer__form form" action="" method="post">
-            <div class="form__item  form__item--offer">
-              <label class="form__label" for="offer__first-name">Имя</label>
-              <input class="form__input" id="offer__first-name" type="text" placeholder="Ваше имя">
-            </div>
-
-            <div class="form__item  form__item--offer">
-              <label class="form__label" for="offer__phone">Телефон</label>
-              <input class="form__input" id="offer__phone" type="tel" placeholder="Номер телефона">
-            </div>
-
-            <div class="form__item  form__item--offer">
-              <label class="form__label" for="offer__massage">Коментарий</label>
-              <input class="form__input" id="offer__massage" type="text" placeholder="Ваш коментарий">
-            </div>        
-          <button class="btn  btn--offer"><span class="btn__text">Оставить заявку</span></button>
-        </form>
+        <span class="order__price">7 962 руб</span>
+        <p class="order__descr">
+          Велоэргометры серий U/R/H. Часть внутренней электроники и программный код существенно доработаны.
+        </p>
       </div>
+      <form class="order__form  form" action="" method="post">
+          <div class="order__form-item  form__item">
+            <label class="form__label" for="order__first-name">Имя</label>
+            <input class="form__input" id="order__first-name" type="text" placeholder="Ваше имя">
+          </div>
+
+          <div class="order__form-item  form__item">
+            <label class="form__label" for="order__phone">Телефон</label>
+            <input class="form__input" id="order__phone" type="tel" placeholder="Номер телефона">
+          </div>
+
+          <div class="order__form-item  form__item">
+            <label class="form__label" for="order__massage">Коментарий</label>
+            <input class="form__input" id="order__massage" type="text" placeholder="Ваш коментарий">
+          </div>
+                  
+        <button class="order__btn  btn"><span class="btn__text">Оставить заявку</span></button>
+      </form>
     </div>
-  </div>      
+  </div>
   <div class="modal  modal--alert">
     <div class="modal__container  modal__container--alert  alert">
       <button class="modal__exit">Закрыть</button>
@@ -314,6 +312,11 @@
       <button class="btn"><span class="btn__text">Закрыть</span></button>
     </div>
   </div>
+  
+  <script src="js/handlebars.js" type="text/javascript"></script>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/magnific-popup.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
   <script id="template-product" type="text/x-handlebars-template">
     {{#each products}}
       <div class="card" data-status="{{status}}" data-type="{{type}}" data-price-group="{{price-group}}">
@@ -326,8 +329,8 @@
           {{short-description}}
         </p>
         <div class="card__controls">
-          <button class="mfp-open-offer  js-open-offer  btn  btn--light  btn--slim"><span class="btn__text">Заказать</span></button>
-          <button class="mfp-open-offer  js-open-offer  btn  btn--second  btn--slim"><span class="btn__text">Подробнее</span></button>
+          <a class="mfp-open-offer  js-open-order  btn  btn--light  btn--slim" href="#order-popup"><span class="btn__text">Заказать</span></a>
+          <a class="mfp-open-offer  js-open-order  btn  btn--second  btn--slim" href="#order-popup"><span class="btn__text">Подробнее</span></a>
         </div>
       </div>
     {{/each}}
@@ -357,8 +360,9 @@
   </script>
   <script src="js/siema.min.js"></script>
   <script src="js/content.js" type="text/javascript"></script>
-  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
-  <!-- <script src="js/jquery.magnific-popup.min.js" type="text/javascript"></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/jquery.malihu.PageScroll2id.js"></script>
+  <script src="js/jquery.magnific-popup.min.js" type="text/javascript"></script>
   <script src="js/script.js"></script>
 </body>
 </html>

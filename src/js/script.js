@@ -75,57 +75,61 @@ function castom() {
     });
   }
 
-  var mdAdviceBody = document.querySelector(".modal--advice");
-  var mdAdviceOpen = document.querySelectorAll(".js-open-advice");
-  var mdAdviceExit = document.querySelector(".modal--advice .modal__exit");
+  /* initScrollToId */
 
-  toggleModal(mdAdviceBody, mdAdviceOpen, mdAdviceExit);
+  $(".page-header__nav-item").mPageScroll2id();
 
-  var mdOfferBody = document.querySelector(".modal--offer");
-  var mdOfferOpen = document.querySelectorAll(".js-open-offer");
-  var mdOfferExit = document.querySelector(".modal--offer .modal__exit");
-
-  toggleModal(mdOfferBody, mdOfferOpen, mdOfferExit);
-  /*EndModals*/
+  /* initScrollToId */
 
   /*MfpModals*/
-  // $('.mfp-open-advice').magnificPopup();
-  // $('.mfp-open-advice').magnificPopup({
-  //     items: {
-  //       src: '.box'
-  //     },
-  //     type: 'inline'
-  // });
 
-  // $('.mfp-open-offer').magnificPopup({
-  //     items: {
-  //       src: '.modal__container--offer'
-  //     },
-  //     type: 'inline'
-  // });
+  $('.js-open-advice').magnificPopup({
+    type: 'inline',
+    midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+  });
+
+  $('.js-open-order').magnificPopup({
+    type: 'inline',
+    midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+  });
+
   /*EndMfpModals*/
 
   /*Options*/
+  // function initSwitch(options) {
+  //   const curWrap = document.querySelector(".options__current");
+  //   const otherWrap = document.querySelector(".options__variants");
+
+  //   var curOption = document.querySelector(".options__current input");
+  //   var otherOptions = document.querySelectorAll(".options__variants input");
+
+  //   otherOptions.forEach((item, i, arr) => {
+  //     item.addEventListener("click", (e) => {
+  //       e.preventDefault();
+
+  //       curOption.classList.remove("options__current-variant");
+  //       otherWrap.insertBefore(curOption, otherWrap.firstChild);
+
+  //       item.classList.add("options__current-variant");
+  //       curWrap.insertBefore(item, curWrap.firstChild);
+
+  //       initSwitch(options);
+  //     });
+  //   });
+  // }
+
   function addOptions(selector) {
-    // var options = document.querySelector(selector + " " + ".options");
     var optionsCurrent = document.querySelector(selector + " " + ".options__current");
     var optionsVariants = document.querySelector(selector + " " + ".options__variants");
     var optionsVariant = document.querySelectorAll(selector + " " + ".options__variant");
     var optionsCurrentVariant = document.querySelector(selector + " " + ".options__current-variant");
-    // var body  = document.querySelector("body");
 
     optionsCurrent.addEventListener("click", function (e) {
       e.preventDefault();
       optionsVariants.classList.toggle("options__variants--visible");
     });
 
-    // body.addEventListener("click", (e) => {
-    //   optionsVariants.classList.remove("options__variants--visible");
-    // });
-
-    // options.addEventListener("click", (e) => {
-    //   e.stopImmediatePropagation();
-    // });
+    // initSwitch(selector);
   }
 
   addOptions(".js-sort-type-wrap");
@@ -214,5 +218,6 @@ function castom() {
   });
 
   /*EndFeedback*/
+
   console.log("s end");
 }

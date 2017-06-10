@@ -1,6 +1,9 @@
 .link {
   @include un-target;
   @include font($color-action-second, inherit);
+
+  @include react--trs-default;
+  @include react--color(lighten($color-action-second, 12), $color-action-second);
   
   text-decoration: underline;
   

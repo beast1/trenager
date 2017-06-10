@@ -2,6 +2,8 @@
  position: relative;
   
   &__control {
+    @include react--trs-default;
+
     position: absolute;
     z-index: 1;
 
@@ -14,10 +16,18 @@
     
     &--left {
       background-image: url("../img/icon-arrow-left.png");
+
+      &:hover {
+        transform: translate(-5px, 0);
+      }
     }
     
     &--right {
       background-image: url("../img/icon-arrow-right.png");
+
+      &:hover {
+        transform: translate(5px, 0);
+      }
     }
   }
   
@@ -30,16 +40,26 @@
   
   &__pagination-item {
     @include margin-right(5px);
-    
-    width: 12px;
-    height: 12px;
+
+    @include react--trs-default;
+
+    width: 15px;
+    height: 15px;
     border: 2px solid $color-action-main;
     
     border-radius: 50%;
     cursor: pointer;  
     
+    &:hover {
+      background-color: fade-out($color-action-main, 0.4);
+    }
+
     &--current {
       background-color: $color-action-main;
+
+      &:hover {
+      background-color: $color-action-main;
+    }
     }
   }
 }

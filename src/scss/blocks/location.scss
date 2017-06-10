@@ -80,6 +80,10 @@
       
     }    
   }
+
+  &__phone {
+    @include un-link;
+  }
   
   &__adress-item {
     display: flex;

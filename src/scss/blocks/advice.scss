@@ -1,5 +1,13 @@
 .advice {
-  padding: 56px 34px 53px;
+  max-width: 660px;
+  min-height: 480px;
+  padding: 36px 50px 40px;
+
+  @media (max-width: $screen-sm) {
+    max-width: 330px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
   
   &__title {
     @include font-h2($color-second);
@@ -11,5 +19,44 @@
     font-size: 18px;
     line-height: 24px;
     text-align: center;
+
+    @media (max-width: $screen-sm) {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
+
+  &__checklist {
+    margin-bottom: 46px;
+
+    @media (max-width: $screen-sm) {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__checklist-title {
+    margin-bottom: 19px;
+
+    @media (max-width: $screen-sm) {
+      margin-bottom: 14px;
+
+      text-align: center;
+    }
+  }
+
+  &__form-row {
+    @media (max-width: $screen-sm) {
+      margin-top: 10px;
+      flex-direction: column;
+    }
+  }
+
+  &__form-item {
+    margin-bottom: 38px;
+
+    @media (max-width: $screen-sm) {
+      width: 100%;
+    }
   }
 }

@@ -36,9 +36,16 @@
     
     width: 100%;
     height: 24px;
+    padding-bottom: 4px;
     border-bottom: 1px solid $gray-dark;
     
     color: $gray-darken;
     font-weight: 300;
+
+    &:focus {
+      color: $color-second;
+      
+      border-color: $color-action-main;
+    }
   }
 }

@@ -24,6 +24,8 @@
   }
   
   &__label {
+    @include react--trs-default;
+    
     @include font($color-second, 15px);
     
     position: relative;
@@ -31,6 +33,17 @@
     margin-left: 21px;
     
     font-weight: 300;
+
+    cursor: pointer;
+
+    &:hover {
+      color: darken($color-action-main, 12);
+
+      &::before {
+        background: $color-action-main;
+        box-shadow: inset 0 0 0 1px fade-out($color-action-main, 0.5);
+      }
+    }
     
     &::before {
       content: "";
@@ -69,6 +82,11 @@
   &__input {
     display: none;
   }
+}
+
+input[type="checkbox"]:checked + label:hover,
+input[type="radio"]:checked + label:hover {
+  color: $color-second;
 }
 
 input[type="checkbox"]:checked + label::before,
